@@ -107,12 +107,8 @@ main {
 .dark main {
   background-color: var(--dark-accent);
   color: var(--light);
-  border-top: solid .5rem var(--disabled);
 }
 
-.dark .border-bottom {
-  border-bottom: solid .5rem var(--light);
-}
 
 .light header,
 .light footer {
@@ -127,11 +123,6 @@ main {
 
 .header-buttons {
   justify-content: space-between;
-}
-
-
-.light .border-bottom {
-  border-bottom: solid .5rem var(--dark);
 }
 
 .circle {
