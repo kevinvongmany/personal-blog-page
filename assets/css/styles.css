@@ -130,7 +130,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--circle-color);
   color: var(--light);
   text-shadow: 1px 1px .5rem var(--dark-accent);
   border-radius: 50%;
@@ -142,6 +141,11 @@ main {
   font-size: 0.8rem;
 
 }
+
+.hidden {
+  opacity: 0;
+}
+
 @media screen and (min-width: 768px) {
   .circle {
     width: 300px;
