@@ -15,8 +15,10 @@ function updateCircleGradient(angle) {
 
 if (mode === "dark") {
   body.classList.add("dark");
+  updateCircleGradient(0);
 } else {
   body.classList.add("light");
+  updateCircleGradient(180);
 }
 
 const toggleMode = function (event) {
