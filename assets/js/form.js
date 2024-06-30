@@ -11,9 +11,9 @@ console.log(form)
 const handleFormSubmit = function (event) {
   event.preventDefault();
 
-  const user = form.querySelector('#username').value;
-  const title = form.querySelector('#title').value;
-  const content = form.querySelector('#content').value;
+  const user = form.querySelector('#username').value.trim();
+  const title = form.querySelector('#title').value.trim();
+  const content = form.querySelector('#content').value.trim();
 
   if (!user || !title || !content) {
     alert('Please fill out all fields.');
