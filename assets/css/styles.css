@@ -53,10 +53,10 @@ ul {
 */
 :root {
   --light: #fff;
-  --light-accent: #f9f9fb;
-  --dark: #000;
-  --dark-accent: #222;
-  --dark-accent-action: #111;
+  --light-accent: #fefefe;
+  --dark: #1a1a1a;
+  --dark-accent: #363636;
+  --dark-accent-action: #272727;
   --action: #563d7c;
   --action-accent: #8570a5;
   --disabled: #aaa;
