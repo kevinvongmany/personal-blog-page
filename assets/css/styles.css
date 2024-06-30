@@ -68,14 +68,21 @@ ul {
   transition: background-color ease-in .5s;
 }
 
+.no-transition * {
+  transition: none !important;
+}
+
 /*
   Tags
 */
-header {
+header,
+.header-buttons {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
+
+
 
 header,
 footer {
@@ -93,6 +100,7 @@ main {
 /*
   Classes
 */
+
 .dark header,
 .dark footer {
   background-color: var(--dark);
@@ -103,8 +111,8 @@ main {
 .dark main {
   background-color: var(--dark-accent);
   color: var(--light);
-  border-top: solid .5rem var(--disabled);
 }
+
 
 .light header,
 .light footer {
@@ -117,10 +125,58 @@ main {
   color: var(--dark);
 }
 
+.header-buttons {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--light);
+  text-shadow: 1px 1px .5rem var(--dark-accent);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.circle h2{
+  font-size: 0.8rem;
+
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+  .circle h2{
+    font-size: 1.2rem;
+
+  }
+}
+@media screen and (min-width: 1280px) {
+  .circle {
+    width: 500px;
+    height: 500px;
+  }
+  .circle h2{
+    font-size: 2rem;
+
+  }
+  
+}
 /*
   IDs
 */
 #toggle {
+  display: flex;
   font-size: 1.52em;
   margin: 0;
   padding: 0;
@@ -128,4 +184,15 @@ main {
   border: none;
   cursor: pointer;
   text-shadow: 0px 0px .5rem var(--light-accent);
+}
+
+#toggle-icon {
+  flex-flow: row wrap;
+}
+
+#landing-image {
+  border-left: 0;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
 }

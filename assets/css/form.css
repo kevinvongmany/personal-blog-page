@@ -84,9 +84,6 @@ section {
 /*
   Classes
 */
-.dark section {
-  border-left: solid .5rem var(--disabled);
-}
 
 /*
   IDs

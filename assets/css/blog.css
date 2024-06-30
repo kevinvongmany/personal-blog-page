@@ -79,6 +79,10 @@ ul {
   color: var(--dark);
 }
 
+.hidden {
+  opacity: 0;
+}
+
 /*
   IDs
 */
