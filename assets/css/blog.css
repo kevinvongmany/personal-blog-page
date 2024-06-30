@@ -39,6 +39,7 @@ footer {
   position: fixed;
   inset: 0;
   top: calc(100% - 5rem);
+  padding-top: 0;
 }
 
 li {
@@ -71,17 +72,10 @@ ul {
   color: var(--light);
 }
 
-.light footer {
-  border-top: double 1rem;
-}
-
 .light a {
   color: var(--dark);
 }
 
-.hidden {
-  opacity: 0;
-}
 
 /*
   IDs
@@ -106,6 +100,16 @@ ul {
   background-color: var(--dark-accent-action);
 }
 
-#love {
+#author-block {
+  display: flex;
+  margin: 1rem;
+  font-size: 12px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#created-by {
   text-align: center;
 }
