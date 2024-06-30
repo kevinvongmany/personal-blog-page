@@ -26,18 +26,18 @@ const getMode = () => {
 };
 
 const setMode = (mode) => {
-  if (mode === "light") {
+  if (mode === "light") { // sets the mode back to dark if it's light
     body.classList.remove("light");
     body.classList.add("dark");
     toggleIcon.setAttribute("src", moonIcon)
     updateCircleGradient(0);
-  } else {
+  } else { // does the inverse
     body.classList.remove("dark");
     body.classList.add("light");
     toggleIcon.setAttribute("src", sunIcon)
     updateCircleGradient(180);
   }
-  localStorage.setItem("mode", mode);
+  localStorage.setItem("mode", mode); // saves the new setting to local storage
 };
 
 let mode = getMode();
@@ -46,19 +46,7 @@ const toggleMode = function (event) {
   event.preventDefault();
   mode = getMode();
   setMode(mode === "light" ? "dark" : "light");
-  // if (mode === "light") {
-  //   body.classList.remove("light");
-  //   body.classList.add("dark");
-  //   toggleIcon.setAttribute("src", moonIcon)
-  //   updateCircleGradient(0);
-  //   setMode("dark");
-  // } else {
-  //   body.classList.remove("dark");
-  //   body.classList.add("light");
-  //   toggleIcon.setAttribute("src", sunIcon)
-  //   updateCircleGradient(180);
-  //   setMode("light");
-  // }
+
 };
 
 const init = () => {
