@@ -83,6 +83,9 @@ header,
 }
 
 
+a, a:visited {
+  text-decoration: none;
+}
 
 header,
 footer {
@@ -102,7 +105,8 @@ main {
 */
 
 .dark header,
-.dark footer {
+.dark footer,
+.dark a {
   background-color: var(--dark);
   color: var(--light);
 }
@@ -115,7 +119,8 @@ main {
 
 
 .light header,
-.light footer {
+.light footer,
+.light a {
   background-color: var(--light);
   color: var(--dark);
 }
