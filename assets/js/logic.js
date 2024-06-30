@@ -26,7 +26,8 @@ const getMode = () => {
 };
 
 const setMode = (mode) => {
-  if (mode === "light") { // sets the mode back to dark if it's light
+  localStorage.setItem("mode", mode);
+  if (mode === "dark") { // sets the mode to dark
     body.classList.remove("light");
     body.classList.add("dark");
     toggleIcon.setAttribute("src", moonIcon)
@@ -37,7 +38,6 @@ const setMode = (mode) => {
     toggleIcon.setAttribute("src", sunIcon)
     updateCircleGradient(180);
   }
-  localStorage.setItem("mode", mode); // saves the new setting to local storage
 };
 
 let mode = getMode();
@@ -45,7 +45,7 @@ let mode = getMode();
 const toggleMode = function (event) {
   event.preventDefault();
   mode = getMode();
-  setMode(mode === "light" ? "dark" : "light");
+  setMode(mode === "light" ? "dark" : "light"); // toggles between `dark` and `light` values based on the current mode
 
 };
 
