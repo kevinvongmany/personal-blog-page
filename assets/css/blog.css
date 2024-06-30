@@ -51,7 +51,7 @@ main {
   gap: 1em;
   padding: 1rem;
   height: calc(100vh - 11rem);
-  overflow-y: scroll;
+  overflow: auto;
   justify-content: flex-start;
 }
 
